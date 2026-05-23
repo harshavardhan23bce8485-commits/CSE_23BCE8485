@@ -1,0 +1,49 @@
+show databases;
+
+create database student;
+
+drop database student;
+
+create database uni;
+
+use uni;
+
+create table students(
+sid int,
+sname varchar(50),
+marks int
+);
+
+create table faculty(
+fid int,
+fname varchar(50),
+salary int
+);
+
+create table courses(
+cid int,
+cname varchar(50),
+credits int
+);
+
+show tables from uni;
+
+select * from students;
+
+insert into students values (101,'rahul',85);
+insert into students values (102,'kiran',78);
+insert into students values (103,'sneha',91);
+insert into students values (104,'arjun',67);
+insert into students values (105,'meena',88);
+
+insert into faculty values (201,'sharma',50000);
+insert into faculty values (202,'ravi',55000);
+insert into faculty values (203,'anita',60000);
+insert into faculty values (204,'vijay',52000);
+insert into faculty values (205,'deepa',58000);
+
+insert into courses values (301,'java',4);
+insert into courses values (302,'python',3);
+insert into courses values (303,'dbms',4);
+insert into courses values (304,'os',3);
+insert into courses values (305,'cn',4);
